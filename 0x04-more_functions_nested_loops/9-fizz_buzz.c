@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - prints the numbers from 1 to 100
+ * main - prints the numbers from 1 to 100, followed by a new line
  * multiples of three prints fizz
  * and for multiples of five prints Buzz
- * Returns: 0
+ * Return: Always 0
  */
-
 int main(void)
 {
 	int i;
