@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* Print_rev - it prints a string in rev to the stdout
+* int__rev - it prints a string in rev to the stdout
 * @S: The string
 * Return: Nothing
 */
