@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 * Print_rev - it prints a string in rev to the stdout
-* @s: The string
+* @S: The string
 * Return: Nothing
 */
 void print_rev(char *S)
