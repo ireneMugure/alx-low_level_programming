@@ -1,43 +1,29 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * main - check the code
- *
- * Return: Always 0;
+ * _strncat - Concatenate two strings
+ * @dest: input
+ * @src: input
+ * @n: input
+ * Return: dest
  */
 
-int main(void)
-
+char *_strncat(char *dest, char *src, int n)
 {
-	char s1[98];
-	char *ptr;
-	int i;
+	int a;
+	int b;
 
-	for (i = 0; i < 98 - 1; i++)
+	a = 0;
+	while (dest[a] != '\0')
 	{
-		s1[i] = '*';
+		a++;
 	}
-	s1[i] = '\0';
-	printf("%s\n", s1);
-	ptr = _strncpy(s1, "Technology is best when it brings people together\n", 5);
-	printf("%s\n", s1);
-	printf("%s\n", ptr);
-	ptr = _strncpy(s1, "It's not a faith in technology. It's people\n", 98);
-	printf("%s", s1);
-	printf("%s", ptr);
-	for (i = 0; i < 98; i++)
+	b = 0;
+	while (b < n && src[b] != '\0')
 	{
-		if (i % 10)
-		{
-		printf(" ");
-
-		}
-		if (!(i % 10) && i)
-		{
-		printf("\n");
-		}
-		printf("0x%02x", s1[i]);
+	dest[a] = src[b];
+	a++;
+	b++;
 	}
-	printf("\n");
-	return (0);
+	dest[a] = '\0';
+	return (dest);
 }
