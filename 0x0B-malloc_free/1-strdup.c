@@ -11,7 +11,7 @@
 
 char *_strdup(char *str)
 {
-	char *stra
+	char *sta;
 	int i, r = 0;
 
 	if (str == NULL)
@@ -19,13 +19,13 @@ char *_strdup(char *str)
 	i = 0;
 	while (str[i] != '\0')
 		i++;
-	stra = malloc(sizeof(char) * (i + 1));
+	sta = malloc(sizeof(char) * (i + 1));
 
-	if (stra == NULL)
+	if (sta == NULL)
 		return (NULL);
 
 	for (r = 0; str[r]; r++)
-		stra[r] = str[r];
+		sta[r] = str[r];
 
-	return (stra);
+	return (sta);
 }
