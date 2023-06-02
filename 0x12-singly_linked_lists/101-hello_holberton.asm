@@ -8,11 +8,6 @@ main:
     mov rdi, rsp
     xor eax, eax
     call printf
-
-    ; Clean up the stack
-    add rsp, 16
-
-    ; Exit the program
-    mov eax, 0x60
-    xor edi, edi
-    syscall
+	mov eax,0
+	ret
+	format: db 'Hello, Holberton\n',0
